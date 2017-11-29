@@ -19,12 +19,11 @@ public class GnomeSortTest extends GnomeSortAlgorithm{
      */
     public static void main(String[] args) {
         int[] array = {4,9,2,5,8,21,7};
-        array = gnomeSort(array);
+        array = gnomeSortAlgorithm(array);
         System.out.println(Arrays.toString(array));
         
         int[] array2 = {2,567,7823,45,237,3546,435,9834,4563,235,6,34,67,22,656,23};
-        array2 = gnomeSort(array2);
+        array2 = gnomeSortAlgorithm(array2);
         System.out.println(Arrays.toString(array2));
     }
-    
 }
