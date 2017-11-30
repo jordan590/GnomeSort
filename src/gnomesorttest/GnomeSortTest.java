@@ -7,6 +7,7 @@
 package gnomesorttest;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  *
@@ -25,5 +26,14 @@ public class GnomeSortTest extends GnomeSortAlgorithm{
         int[] array2 = {2,567,7823,45,237,3546,435,9834,4563,235,6,34,67,22,656,23};
         array2 = gnomeSortAlgorithm(array2);
         System.out.println(Arrays.toString(array2));
+        
+        int[] randomArray = new int[25];
+        Random randgen = new Random();
+        for (int i = 0; i < randomArray.length; i++){
+            int tempNum = randgen.nextInt(1000);
+            randomArray[i] = tempNum;
+        }
+        randomArray = gnomeSortAlgorithm(randomArray);
+        System.out.println(Arrays.toString(randomArray));
     }
 }
